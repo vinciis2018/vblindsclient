@@ -696,7 +696,7 @@ const exportToJson = (e: any) => {
           </Box>
           <Box  p="10px" shadow="card" >
             {wallets.map((wallet: any) => (
-              <Stack key={wallet._id} onClick={() => props.history.push(`/wallet/${wallet._id}`)}>
+              <Stack key={wallet._id} onClick={() => props.history.push(`/wallet/${wallet._id}/${wallet.walletAddAr}`)}>
                 {wallet.user === userInfo._id && (
                   <Stack>
                     <Flex justify="space-between">
